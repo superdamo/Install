@@ -69,12 +69,13 @@ rm -rf ~/dotfiles &&
 sudo rm -rf /usr/share/fonts/truetype/dejavu &&
 xmonad --recompile &&
 xrdb -load ~/.Xresources &&
+update-alternatives --config x-cursor-theme &&
 
-#starting the X server with cheesy countdown
+#starting the X server with cheesy countdown & clean up
 echo "Starting system in:" &&
 echo "5..." &&
 sleep 1; echo "4..." &&
 sleep 1; echo "3..." &&
 sleep 1; echo "2..." &&
 sleep 1; echo "1..." &&
-sleep 1; startx
+sleep 1; startx & rm ~/install.sh
