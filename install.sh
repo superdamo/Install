@@ -69,7 +69,7 @@ rm -rf ~/dotfiles &&
 sudo rm -rf /usr/share/fonts/truetype/dejavu &&
 xmonad --recompile &&
 xrdb -load ~/.Xresources &&
-update-alternatives --config x-cursor-theme &&
+echo "2" | sudo update-alternatives --config x-cursor-theme &&
 
 #starting the X server with cheesy countdown & clean up
 echo "Starting system in:" &&
