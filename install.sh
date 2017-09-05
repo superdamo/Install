@@ -30,7 +30,7 @@ declare -a sWare=(
 #loop running the installer
 for i in "${sWare[@]}"
 do
-	sudo apt install "$i"
+	yes | sudo apt install "$i"
 done
 
 #directories and files to be made
