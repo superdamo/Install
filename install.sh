@@ -72,6 +72,7 @@ xrdb -load ~/.Xresources &&
 echo "2" | sudo update-alternatives --config x-cursor-theme &&
 
 #starting the X server with cheesy countdown & clean up
+sleep 5 &&
 echo "Starting system in:" &&
 echo "5..." &&
 sleep 1; echo "4..." &&
